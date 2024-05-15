@@ -11,6 +11,8 @@
 		5291D2AD2BF5583100841FA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291D2AC2BF5583100841FA5 /* ContentView.swift */; };
 		5291D2AF2BF5583200841FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5291D2AE2BF5583200841FA5 /* Assets.xcassets */; };
 		5291D2B22BF5583200841FA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5291D2B12BF5583200841FA5 /* Preview Assets.xcassets */; };
+		5291D2BB2BF5599C00841FA5 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291D2B82BF5599C00841FA5 /* CGFloat+Ext.swift */; };
+		5291D2BC2BF5599C00841FA5 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291D2B92BF5599C00841FA5 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		5291D2AC2BF5583100841FA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5291D2AE2BF5583200841FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5291D2B12BF5583200841FA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5291D2B82BF5599C00841FA5 /* CGFloat+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
+		5291D2B92BF5599C00841FA5 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			children = (
 				5291D2AA2BF5583100841FA5 /* RandomColorSwiftUIApp.swift */,
 				5291D2AC2BF5583100841FA5 /* ContentView.swift */,
+				5291D2BA2BF5599C00841FA5 /* Extensions */,
 				5291D2AE2BF5583200841FA5 /* Assets.xcassets */,
 				5291D2B02BF5583200841FA5 /* Preview Content */,
 			);
@@ -65,6 +70,15 @@
 				5291D2B12BF5583200841FA5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5291D2BA2BF5599C00841FA5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5291D2B82BF5599C00841FA5 /* CGFloat+Ext.swift */,
+				5291D2B92BF5599C00841FA5 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5291D2BB2BF5599C00841FA5 /* CGFloat+Ext.swift in Sources */,
+				5291D2BC2BF5599C00841FA5 /* UIColor+Ext.swift in Sources */,
 				5291D2AD2BF5583100841FA5 /* ContentView.swift in Sources */,
 				5291D2AB2BF5583100841FA5 /* RandomColorSwiftUIApp.swift in Sources */,
 			);
