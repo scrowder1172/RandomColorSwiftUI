@@ -1,6 +1,10 @@
 # Random Color (UIKit)
 
 This project is the SwiftUI version of the UIKit random color app. The app displays a list of 50 random colors and allows the user to navigate to a full screen display of the selected color.
+<img src="https://github.com/scrowder1172/RandomColorSwiftUI/assets/13410780/0a973335-1b72-4350-a717-85755aace671" width="200" height="300">
+<img src="https://github.com/scrowder1172/RandomColorSwiftUI/assets/13410780/83a895c9-f84f-4302-b81c-cfb75f7ac54b" width="200" height="300">
+
+
 
 ## How to install
 
