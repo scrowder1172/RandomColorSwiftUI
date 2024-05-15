@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var colors: [UIColor] = []
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(colors, id: \.self) { color in
+                    NavigationLink(value: color) {
+                        Text("")
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
+                    .listRowBackground(Color(uiColor: color))
+                }
+            }
+            .navigationTitle("Colors")
+            .navigationDestination(for: UIColor.self) { color in
+                Text("")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color(uiColor: color))
+            }
         }
-        .padding()
+        .onAppear {
+            createRandomColors()
+        }
+    }
+    
+    func createRandomColors() {
+        for _ in 0..<50 {
+            colors.append(UIColor.random())
+        }
     }
 }
 
